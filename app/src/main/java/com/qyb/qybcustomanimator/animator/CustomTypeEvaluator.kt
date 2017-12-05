@@ -9,10 +9,6 @@ import android.animation.TypeEvaluator
  */
 class CustomTypeEvaluator : TypeEvaluator<BaseAnimatior> {
 
-//    private var customObj : BaseAnimatior
-//
-//    constructor(customObj : BaseAnimatior){this.customObj = customObj}
-
     override fun evaluate(fraction: Float, startValue: BaseAnimatior?, endValue: BaseAnimatior?): BaseAnimatior
             = endValue!!.onObjectEvaluate(fraction,startValue,endValue)
 }
